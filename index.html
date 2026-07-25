@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahnaz Shafii | Full-Stack Developer Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --card-bg: #1e293b;
+            --card-border: #334155;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 48px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.05em;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+        }
+
+        .tagline {
+            color: var(--accent);
+            font-weight: 500;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            border-bottom: 1px solid var(--card-border);
+            padding-bottom: 8px;
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+
+        .skill-tag {
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
+            color: var(--text-main);
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .project-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            padding: 24px;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+            text-decoration: none;
+            display: block;
+            color: inherit;
+        }
+
+        .project-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent);
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .project-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-main);
+        }
+
+        .project-link-icon {
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        .project-desc {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 16px;
+        }
+
+        footer {
+            margin-top: 64px;
+            text-align: center;
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- HEADER PROFILE SECTION -->
+        <header>
+            <h1>Mahnaz Shafii</h1>
+            <p class="subtitle">Full-Stack Web Developer</p>
+            <p class="tagline">Building clean, performant, and scaleable web experiences.</p>
+        </header>
+
+        <!-- SKILLS SECTION -->
+        <section>
+            <h2>🛠️ Technical Toolbox</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">JavaScript (ES6+)</span>
+                <span class="skill-tag">HTML5 & CSS</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">Git & GitHub</span>
+                <span class="skill-tag">VS Code Workflow</span>
+            </div>
+        </section>
+
+        <!-- CORE FEATURED PROJECTS SECTION -->
+        <section>
+            <h2>🚀 Featured Work</h2>
+            
+            <!-- Link pointing cleanly to your actual code repository -->
+            <a href="https://github.com" class="project-card" target="_blank" rel="noopener noreferrer">
+                <div class="project-header">
+                    <span class="project-title">Master Development Portfolio</span>
+                    <span class="project-link-icon">View Repository &rarr;</span>
+                </div>
+                <div class="skills-grid">
+                    <span class="skill-tag" style="background: rgba(56, 189, 248, 0.1); color: var(--accent); border: none;">Active Project</span>
+                </div>
+            </a>
+        </section>
+
+        <!-- FOOTER CONTACT BOUNDS -->
+        <footer>
+            <p>&copy; 2026 Mahnaz Shafii. Powered by <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
